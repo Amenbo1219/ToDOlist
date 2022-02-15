@@ -1,0 +1,29 @@
+-- Adminer 4.8.1 MySQL 8.0.28 dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+SET NAMES utf8mb4;
+
+DROP TABLE IF EXISTS `todo`;
+CREATE TABLE `todo` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `task` varchar(20) NOT NULL,
+  `deadline` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `todo` (`id`, `task`, `deadline`) VALUES
+(5,	'PHP',	'2001-04-24 04:24:00'),
+(6,	'test',	'2022-02-13 06:26:42'),
+(10,	'HelloWorld',	'2022-02-13 15:08:50'),
+(15,	'hello',	'2022-02-13 15:08:50'),
+(25,	'insert',	NULL),
+(26,	'insert',	NULL),
+(27,	'fadsfa',	NULL),
+(28,	'fadfa',	'2002-02-02 02:20:00'),
+(32,	'fdafda',	NULL);
+
+-- 2022-02-15 08:28:38
