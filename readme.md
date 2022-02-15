@@ -33,10 +33,21 @@
 cd ToDOlist
 docker-compose up -d
 ```
+http://(host):8080にアクセス<br>
+該当ページは以下でアクセス．
+* データベース種別:MySQL
+* サーバー:db
+* ユーザー名:root
+* パスワード:example
+* データベース:空欄<br>
+左サイドバーのエクスポート>"todo.sql.gz"のファイルをインポートする．
+
+
  
 # Usage
- 
-http:host/todo.phpにアクセスする
+* (host) = 自分のIPアドレス or DNS <br>
+http://(host)/todo.php
+にアクセスする
 # Note
  
 注意点などがあれば書く
