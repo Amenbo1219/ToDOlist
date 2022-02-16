@@ -8,7 +8,7 @@
 </ul>
 
 # DEMO
-準備中
+![ホーム画面](/img/demo.png)
 
  
 # NextStage
