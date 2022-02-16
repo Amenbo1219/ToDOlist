@@ -2,27 +2,14 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title></title>
+    <!-- bootstrap is CSS codes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>ToDOリスト</title>
   </head>
   <body>
+    <div class="container">
       <h1>ToDOリスト</h1>
-      <script>
-          function isCheck() {
-            let arr_checkBoxes = document.getElementsByClassName("check");
-            let count = 0;
-            for (let i = 0; i < arr_checkBoxes.length; i++) {
-                if (arr_checkBoxes[i].checked) {
-                    count++;
-                }
-            }
-            if (count > 0) {
-                return true;
-            } else {
-                window.alert("1つ以上選択してください。");
-                return false;
-            };
-        }
-      </script>
+      
         <?php
         require_once 'control_db.php';
         $sql =  new control_db();
@@ -56,8 +43,8 @@
             <td><a href="./insert.php">新規追加</a></td>
         </tr></table>';
         // $sql->select_db();
-        $sql->close_db();
-
-        ?>
+        $sql->close_db();?>
+        <script src=app.js></script>
+    </div>
   </body>
 </html>
