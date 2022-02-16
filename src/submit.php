@@ -1,3 +1,4 @@
+<meta http-equiv="refresh" content="2;URL=todo.php">
 <?php
 require_once 'control_db.php';
     date_default_timezone_set('JST');
@@ -12,15 +13,14 @@ require_once 'control_db.php';
     if ($deadline == '1970-01-01T00:00'){
         $deadline = null;//$deadlineが存在しなかったら（nullだったら，データを削除．）
     }
-    echo $id.gettype($id);
-    echo $task.gettype($task);
-    echo $deadline.gettype($deadline); 
+    // echo $id.gettype($id);
+    // echo $task.gettype($task);
+    // echo $deadline.gettype($deadline); 
     if ($id==null){
         $sql->inseart_db($task,$deadline);
     } else {
         $sql->update_db($id,$task,$deadline);
     }
-    echo '<h1>送信完了しました</h1>
-    <a href="todo.php">完了</a>';
+    echo '<p>送信完了しました．リダイレクトします....</p>';
 
 ?>

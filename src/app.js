@@ -13,4 +13,3 @@ function isCheck() {
         return false;
     };
 }
-isCheck()

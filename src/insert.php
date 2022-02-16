@@ -2,16 +2,27 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title></title>
+    <title>新規追加</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src=app.js></script>
   </head>
   <body>
-    <?php
-        echo ' <h1>新規追加</h1>
+    <div class="container"><br>
+      <div class="alert alert-dark" role="alert">
+        <h2 class="alert-heading mb-9">新規追加</h2>
+      </div>
         <form action="submit.php" method="post">
-                <p>タスク:<input type="text" name="task" required></p>
-                <p>期限:<input type="datetime-local" name="time"></p>
-                <a href="todo.php"> キャンセル</a> <input type="submit">
-        </form>';
-    ?>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">タスク</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" name='task' placeholder="Type in Your Task">
+          </div>
+          
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">締め切り</label>
+              <input type="datetime-local" name="time" class="form-control" id="formGroupExampleInput">
+            </div>
+          <input class="btn btn-dark btn-sm" type="submit">
+        </form>
+    </div>
   </body>
 </html>
