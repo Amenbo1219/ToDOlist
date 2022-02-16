@@ -59,6 +59,5 @@ http://(host)/todo.php
 作成情報を列挙する
  
 * 作成者:Amembo
-* 所属:TuT
 * E-mail:
 c0b20140d0@edu.teu.ac.jp 
