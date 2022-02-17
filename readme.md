@@ -1,15 +1,11 @@
 <h1>ToDOリスト</h1>
-<h3>2022年2月16日更新</h3>
+<h3>2022年2月17日更新</h3>
 <ul>
-    <li>各サイトの表示がレスポンシブデザインに対応しました</li>
-    <li>タスクの期限が終了すると，アクティブ判定になり，該当タスクの行が濃く表示されるようになりました．</li>
-    <li>SQLの新設定ファイルtodo.sql.gzを追加しました．</li>
-    <li>SQLの旧設定ファイルdb-confファイルを削除しました．</li>
-    <li>本プログラムのフローチャートを含む構想図を追加しました．</li>
+    <li>readme.MDを更新しました</li>
 </ul>
 
 # DEMO
-![ホーム画面](/img/demo.png)
+![ホーム画面](/img/do.gif)
 
  
 # NextStage
@@ -41,14 +37,26 @@ http://(host):8080にアクセス<br>
 * ユーザー名:root
 * パスワード:example
 * データベース:空欄<br>
-左サイドバーのインポート>"todo.sql.gz"のファイルをインポートする．
+左サイドバーのインポート>"todo.sql.gz"のファイルをインポートする．<br>
+### 接続方法
+![接続方法](./img/access_db.gif)
 
 
  
 # Usage
 * (host) = 自分のIPアドレス or DNS <br>
 http://(host)/todo.php
-にアクセスする
+にアクセスする<br>
+### ホーム画面
+![todo](./img/home.png)
+### 編集
+![edit](./img/insert.png)
+### 新規追加
+![insert](./img/append.png)
+### 削除
+![deleate](./img/deleate.png)
+
+
 # Note
  
 注意点などがあれば書く
