@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="7d5-bDZexd8vV0so3HHP" name="screen_Image">
-        <mxGraphModel dx="433" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+        <mxGraphModel dx="308" dy="289" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -18,6 +18,13 @@
                 </mxCell>
                 <mxCell id="Y7GCv26vlgXCxl02CrZF-39" value="呼び出し" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="1" source="34" target="36" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="task,deadline" style="edgeStyle=none;html=1;entryX=0.575;entryY=-0.031;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="34" target="38">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="580" y="150"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="34" value="ToDo挿入" style="swimlane;swimlaneFillColor=default;" parent="1" vertex="1">
                     <mxGeometry x="290" y="30" width="200" height="200" as="geometry"/>
@@ -102,6 +109,13 @@
                 <mxCell id="Y7GCv26vlgXCxl02CrZF-40" value="呼び出し" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="1" source="4Xmd-mUGXqTQTW1bsWpT-42" target="36" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="42" value="id,task,deadline" style="edgeStyle=none;html=1;entryX=0.588;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4Xmd-mUGXqTQTW1bsWpT-42" target="38">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="510" y="330"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="4Xmd-mUGXqTQTW1bsWpT-42" value="ToDo更新" style="swimlane;swimlaneFillColor=default;" parent="1" vertex="1">
                     <mxGeometry x="290" y="240" width="200" height="200" as="geometry"/>
                 </mxCell>
@@ -162,6 +176,18 @@
                 </mxCell>
                 <mxCell id="37" value="function_pick_id/DBのID行の抽出．" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;labelBackgroundColor=none;" parent="Y7GCv26vlgXCxl02CrZF-42" vertex="1">
                     <mxGeometry y="180" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="submit" style="swimlane;swimlaneFillColor=default;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="670" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="送られたフォームの内容を引数として受け取る" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontFamily=Helvetica;fontSize=10;" vertex="1" parent="38">
+                    <mxGeometry y="25" width="240" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="受け取った引数をcontrol_dbまで渡す" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontFamily=Helvetica;fontSize=10;" vertex="1" parent="38">
+                    <mxGeometry y="70" width="200" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="SQL接続終了" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontFamily=Helvetica;fontSize=10;" vertex="1" parent="38">
+                    <mxGeometry y="115" width="240" height="45" as="geometry"/>
                 </mxCell>
                 <mxCell id="33" value="名称未設定レイヤ" parent="0"/>
             </root>
